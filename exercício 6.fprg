@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exerc&#237;cio 6"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-05 10:29:02 "/>
+        <attribute name="created" value="QWx1bm87TEFCLTAyLTA1OzIwMjYtMDMtMDU7IjA5OjU1OjUxICI7MjIwNQ=="/>
+        <attribute name="edited" value="QWx1bm87TEFCLTAyLTA1OzIwMjYtMDMtMDU7IjEwOjI5OjAyICI7MTsyMzAy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor, desconto, calculo, valorFinal" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe o valor do produto&quot;" newline="True"/>
+            <input variable="valor"/>
+            <output expression="&quot;Informe a porcentagem de desconto&quot;" newline="True"/>
+            <input variable="desconto"/>
+            <assign variable="calculo" expression="valor*desconto/100"/>
+            <assign variable="valorFinal" expression="valor-calculo"/>
+            <output expression="&quot;O valor com desconto ser&#225; de: &quot;" newline="False"/>
+            <output expression="valorFinal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

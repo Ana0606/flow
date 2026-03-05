@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="juros"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-02-26 12:25:11 "/>
+        <attribute name="created" value="QWx1bm87TEFCLTAyLTA1OzIwMjYtMDItMjY7IjExOjM1OjI0ICI7MjE5OA=="/>
+        <attribute name="edited" value="QWx1bm87TEFCLTAyLTA1OzIwMjYtMDItMjY7IjEyOjI1OjExICI7MjsyMzAz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="deposito, final, juros, tempo, taxa" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe o valor do dep&#243;sito&quot;" newline="True"/>
+            <input variable="deposito"/>
+            <output expression="&quot;Informe o tempo de rendimento em meses&quot;" newline="True"/>
+            <input variable="tempo"/>
+            <output expression="&quot;Informe a taxa de juros&quot;" newline="True"/>
+            <input variable="taxa"/>
+            <assign variable="juros" expression="taxa/100"/>
+            <assign variable="final" expression="deposito*(1+juros)^tempo"/>
+            <output expression="&quot;O montante final &#233; de: &quot;" newline="True"/>
+            <output expression="final" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

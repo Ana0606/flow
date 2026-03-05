@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="6n"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-02-19 12:04:58 "/>
+        <attribute name="created" value="QWx1bm87TEFCLTAyLTA1OzIwMjYtMDItMTk7IjEwOjM5OjI4ICI7MjIwNw=="/>
+        <attribute name="edited" value="QWx1bm87TEFCLTAyLTA1OzIwMjYtMDItMTk7IjEyOjA0OjU4ICI7MjsyMzEz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="soma, n1, n2, n3, n4, n5, n6" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe os 6 n&#250;meros&quot;" newline="True"/>
+            <input variable="n1"/>
+            <input variable="n2"/>
+            <input variable="n3"/>
+            <input variable="n4"/>
+            <input variable="n5"/>
+            <input variable="n6"/>
+            <assign variable="soma" expression="(n1+n2+n3+n4+n5+n6)"/>
+            <if expression="(soma&lt;40)">
+                <then>
+                    <output expression="&quot;Abaixo da meta&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Atingiu a meta&quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="soma" newline="True"/>
+            <if expression="(soma%2==0)">
+                <then>
+                    <output expression="&quot;N&#250;mero par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;N&#250;mero &#237;mpar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

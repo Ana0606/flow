@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exerc&#237;cio 1"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-05 09:38:48 "/>
+        <attribute name="created" value="QWx1bm87TEFCLTAyLTA1OzIwMjYtMDMtMDU7IjA5OjMyOjE4ICI7MjIwMw=="/>
+        <attribute name="edited" value="QWx1bm87TEFCLTAyLTA1OzIwMjYtMDMtMDU7IjA5OjM4OjQ4ICI7MTsyMzIw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="n1, dobro" type="Integer" array="False" size=""/>
+            <output expression="&quot;Qual seu nome?&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Ol&#225; &quot;" newline="False"/>
+            <output expression="nome" newline="True"/>
+            <output expression="&quot;Informe um n&#250;mero para descobrirmos o dobro dele&quot;" newline="True"/>
+            <input variable="n1"/>
+            <assign variable="dobro" expression="n1*2"/>
+            <output expression="&quot;O dobro de &quot;" newline="False"/>
+            <output expression="n1" newline="False"/>
+            <output expression="&quot; &#233;: &quot;" newline="False"/>
+            <output expression="dobro" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

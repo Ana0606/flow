@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="%"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-02-26 10:37:41 "/>
+        <attribute name="created" value="QWx1bm87TEFCLTAyLTA1OzIwMjYtMDItMjY7IjA5OjI0OjI2ICI7MjIwNQ=="/>
+        <attribute name="edited" value="QWx1bm87TEFCLTAyLTA1OzIwMjYtMDItMjY7IjEwOjM3OjQxICI7NTsyMzEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="T, P, F, NV" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe o valor do produto&quot;" newline="True"/>
+            <input variable="T"/>
+            <output expression="&quot;Informe o valor do desconto&quot;" newline="True"/>
+            <input variable="P"/>
+            <assign variable="F" expression="T*P/100"/>
+            <assign variable="NV" expression="T-F"/>
+            <output expression="&quot;O valor com desconto ser&#225; de: &quot;" newline="False"/>
+            <output expression="NV" newline="False"/>
+        </body>
+    </function>
+</flowgorithm>

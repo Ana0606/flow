@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="iptu"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-02-26 11:33:03 "/>
+        <attribute name="created" value="QWx1bm87TEFCLTAyLTA1OzIwMjYtMDItMjY7IjEwOjU1OjU0ICI7MjIwMg=="/>
+        <attribute name="edited" value="QWx1bm87TEFCLTAyLTA1OzIwMjYtMDItMjY7IjExOjMzOjAzICI7MTsyMzAx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="imovel, parcelas, aliquota, iptu, valorparc, pix, desconto" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe o valor do im&#243;vel&quot;" newline="True"/>
+            <input variable="imovel"/>
+            <output expression="&quot;Informe a aliquota de IPTU m&#233;dia do litoral&quot;" newline="True"/>
+            <input variable="aliquota"/>
+            <assign variable="iptu" expression="imovel*aliquota*100"/>
+            <output expression="&quot;O valor do IPTU &#233; de: &quot;" newline="False"/>
+            <output expression="iptu" newline="True"/>
+            <output expression="&quot;Informe o valor das parcelas&quot;" newline="True"/>
+            <input variable="parcelas"/>
+            <assign variable="valorparc" expression="iptu/parcelas"/>
+            <output expression="&quot;O valor de cada parcela ser&#225; de: &quot;" newline="False"/>
+            <output expression="valorparc" newline="True"/>
+            <output expression="&quot;Iremos calcular o desconto. Informe o valor do desconto&quot;" newline="True"/>
+            <input variable="desconto"/>
+            <assign variable="pix" expression="iptu*desconto/100"/>
+            <output expression="&quot;O pagamento no pix a vista com desconto de 15% &#233; de: &quot;" newline="False"/>
+            <output expression="pix" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

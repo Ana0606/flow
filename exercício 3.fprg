@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exerc&#237;cio 3"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-05 09:48:26 "/>
+        <attribute name="created" value="QWx1bm87TEFCLTAyLTA1OzIwMjYtMDMtMDU7IjA5OjQ1OjIyICI7MjIwMg=="/>
+        <attribute name="edited" value="QWx1bm87TEFCLTAyLTA1OzIwMjYtMDMtMDU7IjA5OjQ4OjI2ICI7MTsyMzE3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Vamos calcular a nota m&#233;dia de um aluno&quot;" newline="True"/>
+            <output expression="&quot;Informe a primeira nota&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Informe a segunda nota&quot;" newline="True"/>
+            <input variable="n2"/>
+            <assign variable="media" expression="(n1+n2)/2"/>
+            <output expression="&quot;A nota m&#233;dia do aluno &#233;: &quot;" newline="False"/>
+            <output expression="media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

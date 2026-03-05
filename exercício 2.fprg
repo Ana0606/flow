@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exerc&#237;cio 2"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-05 09:44:38 "/>
+        <attribute name="created" value="QWx1bm87TEFCLTAyLTA1OzIwMjYtMDMtMDU7IjA5OjQxOjIzICI7MjE5OQ=="/>
+        <attribute name="edited" value="QWx1bm87TEFCLTAyLTA1OzIwMjYtMDMtMDU7IjA5OjQ0OjM4ICI7MTsyMzE2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, soma" type="Real" array="False" size=""/>
+            <output expression="&quot;Vamos fazer a soma de dois n&#250;meros&quot;" newline="True"/>
+            <output expression="&quot;Informe o primeiro n&#250;mero&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Informe o segundo n&#250;mero&quot;" newline="True"/>
+            <input variable="n2"/>
+            <assign variable="soma" expression="n1+n2"/>
+            <output expression="&quot;A soma dos dois n&#250;mero &#233;: &quot;" newline="False"/>
+            <output expression="soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="%"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-02-26 10:03:43 "/>
+        <attribute name="created" value="QWx1bm87TEFCLTAyLTA1OzIwMjYtMDItMjY7IjA5OjI0OjI2ICI7MjIwNQ=="/>
+        <attribute name="edited" value="QWx1bm87TEFCLTAyLTA1OzIwMjYtMDItMjY7IjEwOjAzOjQzICI7MzsyMzAz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="T, P, Resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe o valor total do produto&quot;" newline="True"/>
+            <input variable="T"/>
+            <output expression="&quot;Informe o percentual que deseja encontrar&quot;" newline="True"/>
+            <input variable="P"/>
+            <assign variable="Resultado" expression="T*P/100"/>
+            <output expression="Resultado" newline="False"/>
+        </body>
+    </function>
+</flowgorithm>

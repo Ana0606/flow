@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exerc&#237;cio 4"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-05 09:52:59 "/>
+        <attribute name="created" value="QWx1bm87TEFCLTAyLTA1OzIwMjYtMDMtMDU7IjA5OjQ5OjU0ICI7MjIxMQ=="/>
+        <attribute name="edited" value="QWx1bm87TEFCLTAyLTA1OzIwMjYtMDMtMDU7IjA5OjUyOjU5ICI7MTsyMzE4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="m, cm" type="Real" array="False" size=""/>
+            <output expression="&quot;Vamos converter metros para cent&#237;metros&quot;" newline="True"/>
+            <output expression="&quot;Informe o metro&quot;" newline="True"/>
+            <input variable="m"/>
+            <assign variable="cm" expression="m*100"/>
+            <output expression="m" newline="False"/>
+            <output expression="&quot; metros &#233; igual a: &quot;" newline="False"/>
+            <output expression="cm" newline="False"/>
+            <output expression="&quot; cent&#237;metros&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
