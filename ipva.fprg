@@ -4,37 +4,46 @@
         <attribute name="name" value="ipva"/>
         <attribute name="authors" value="Aluno"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-03-05 12:31:23 "/>
+        <attribute name="saved" value="2026-03-26 10:50:13 "/>
         <attribute name="created" value="QWx1bm87TEFCLTAyLTA1OzIwMjYtMDMtMDU7IjEyOjEwOjI4ICI7MjE5NA=="/>
         <attribute name="edited" value="QWx1bm87TEFCLTAyLTA1OzIwMjYtMDMtMDU7IjEyOjMxOjIzICI7MjsyMzAx"/>
+        <attribute name="edited" value="QWx1bm87REVTS1RPUC1UVEZGU0IxOzIwMjYtMDMtMjY7IjEwOjUwOjEzICI7MjsyODk1"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
+            <declare name="cilindradas, ano" type="Integer" array="False" size=""/>
+            <declare name="fipe, ipva" type="Real" array="False" size=""/>
             <declare name="veiculo" type="String" array="False" size=""/>
-            <declare name="ano, FIPE, IPVA, anofab, desconto, aliquota, parcelas, valorparc, novovalor" type="Real" array="False" size=""/>
             <output expression="&quot;Cacular IPVA&quot;" newline="True"/>
             <output expression="&quot;Qual seu ve&#237;culo?&quot;" newline="True"/>
             <input variable="veiculo"/>
             <output expression="&quot;Qual o ano?&quot;" newline="True"/>
-            <input variable="anofab"/>
-            <assign variable="ano" expression="2026-anofab"/>
-            <if expression="ano&gt;20">
+            <input variable="ano"/>
+            <output expression="&quot;Informe o valor de mercado&quot;" newline="True"/>
+            <input variable="fipe"/>
+            <if expression="ano&lt;=2006">
                 <then>
                     <output expression="&quot;Isento&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;Informe o valor da FIPE&quot;" newline="True"/>
-                    <input variable="FIPE"/>
-                    <output expression="&quot;Informe o valor da al&#237;quota&quot;" newline="True"/>
-                    <input variable="aliquota"/>
-                    <assign variable="IPVA" expression="FIPE*aliquota*100"/>
-                    <output expression="&quot;Infome o valor das parcelas&quot;" newline="True"/>
-                    <input variable="parcelas"/>
-                    <assign variable="valorparc" expression="parcelas/IPVA"/>
-                    <assign variable="" expression=""/>
-                    <output expression="&quot;O valor de cada parcela ser&#225; de: &quot;&amp; valorparc" newline="True"/>
-                    <assign variable="novovalor" expression="IPVA*desconto/100"/>
+                    <if expression="veiculo = &quot;moto&quot;">
+                        <then>
+                            <output expression="&quot;Quantas cilindradas?&quot;" newline="True"/>
+                            <input variable="cilindradas"/>
+                            <if expression="cilindradas&lt;=170">
+                                <then>
+                                    <output expression="&quot;Isento&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else/>
+                    </if>
+                    <assign variable="ipva" expression="fipe*3.5/100"/>
+                    <output expression="&quot;O valor do IPVA ser&#225; de: &quot; &amp; ipva" newline="True"/>
+                    <output expression="&quot;Dividindo em 5 parcelas o valor ser&#225; de: &quot; &amp; ipva/5" newline="True"/>
+                    <output expression="&quot;Com desconto de 6% ficar&#225; no valor de: &quot; &amp; ipva-(ipva*0.06)" newline="True"/>
                 </else>
             </if>
         </body>

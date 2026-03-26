@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="10 valores"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-26 09:54:00 "/>
+        <attribute name="created" value="QWx1bm87REVTS1RPUC1UVEZGU0IxOzIwMjYtMDMtMjY7IjA5OjI4OjI3ICI7MjgwNA=="/>
+        <attribute name="edited" value="QWx1bm87REVTS1RPUC1UVEZGU0IxOzIwMjYtMDMtMjY7IjA5OjU0OjAwICI7MTsyOTAy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="soma, valor" type="Real" array="False" size=""/>
+            <output expression="&quot;Informe o 1&#176; valor da sequ&#234;ncia&quot;" newline="True"/>
+            <input variable="valor"/>
+            <assign variable="soma" expression="valor"/>
+            <output expression="&quot;A soma deu: &quot; &amp; soma" newline="True"/>
+            <output expression="&quot;Informe o 2&#176; valor da sequ&#234;ncia&quot;" newline="True"/>
+            <input variable="valor"/>
+            <assign variable="soma" expression="soma + valor"/>
+            <output expression="&quot;A soma deu: &quot; &amp; soma" newline="True"/>
+            <output expression="&quot;Informe o 3&#176; valor da sequ&#234;ncia&quot;" newline="True"/>
+            <input variable="valor"/>
+            <assign variable="soma" expression="soma + valor"/>
+            <output expression="&quot;A soma deu: &quot; &amp; soma" newline="True"/>
+            <output expression="&quot;Informe o 4&#176; valor da sequ&#234;ncia&quot;" newline="True"/>
+            <input variable="valor"/>
+            <assign variable="soma" expression="soma + valor"/>
+            <output expression="&quot;A soma deu: &quot; &amp; soma" newline="True"/>
+            <output expression="&quot;Informe o 5&#176; valor da sequ&#234;ncia&quot;" newline="True"/>
+            <input variable="valor"/>
+            <assign variable="soma" expression="soma + valor"/>
+            <output expression="&quot;A soma deu: &quot; &amp; soma" newline="True"/>
+            <output expression="&quot;Informe o 6&#176; valor da sequ&#234;ncia&quot;" newline="True"/>
+            <input variable="valor"/>
+            <assign variable="soma" expression="soma + valor"/>
+            <output expression="&quot;A soma deu: &quot; &amp; soma" newline="True"/>
+            <output expression="&quot;Informe o 7&#176; valor da sequ&#234;ncia&quot;" newline="True"/>
+            <input variable="valor"/>
+            <assign variable="soma" expression="soma + valor"/>
+            <output expression="&quot;A soma deu: &quot; &amp; soma" newline="True"/>
+            <output expression="&quot;Informe o 8&#176; valor da sequ&#234;ncia&quot;" newline="True"/>
+            <input variable="valor"/>
+            <assign variable="soma" expression="soma + valor"/>
+            <output expression="&quot;A soma deu: &quot; &amp; soma" newline="True"/>
+            <output expression="&quot;Informe o 9&#176; valor da sequ&#234;ncia&quot;" newline="True"/>
+            <input variable="valor"/>
+            <assign variable="soma" expression="soma + valor"/>
+            <output expression="&quot;A soma deu: &quot; &amp; soma" newline="True"/>
+            <output expression="&quot;Informe o 10&#176; valor da sequ&#234;ncia&quot;" newline="True"/>
+            <input variable="valor"/>
+            <assign variable="soma" expression="soma + valor"/>
+            <output expression="&quot;A soma deu: &quot; &amp; soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
