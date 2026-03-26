@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Chute"/>
+        <attribute name="authors" value="anacl"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-26 06:49:16 "/>
+        <attribute name="created" value="YW5hY2w7QUNFUi1BTkE7MjAyNi0wMy0yNjsiMDY6Mzg6NDYgIjsyMjUw"/>
+        <attribute name="edited" value="YW5hY2w7QUNFUi1BTkE7MjAyNi0wMy0yNjsiMDY6NDk6MTYgIjsxOzIzNTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, chute" type="Integer" array="False" size=""/>
+            <assign variable="numero" expression="7"/>
+            <output expression="&quot;Digite um n&#250;mero&quot;" newline="True"/>
+            <input variable="chute"/>
+            <if expression="chute &lt; numero">
+                <then>
+                    <output expression="&quot;Muito baixo!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Muito alto!&quot;" newline="True"/>
+                </else>
+            </if>
+            <while expression="chute != numero">
+                <output expression="&quot;Digite outro n&#250;mero para tentar novamente&quot;" newline="True"/>
+                <input variable="chute"/>
+                <if expression="chute &lt; numero">
+                    <then>
+                        <output expression="&quot;Muito baixo!&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="chute &gt; numero">
+                    <then>
+                        <output expression="&quot;Muito alto!&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <output expression="&quot;Acertou!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

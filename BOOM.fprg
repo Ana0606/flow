@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="BOOM"/>
+        <attribute name="authors" value="anacl"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-26 06:38:43 "/>
+        <attribute name="created" value="YW5hY2w7QUNFUi1BTkE7MjAyNi0wMy0yNjsiMDY6MzY6MTggIjsyMjQ3"/>
+        <attribute name="edited" value="YW5hY2w7QUNFUi1BTkE7MjAyNi0wMy0yNjsiMDY6Mzg6NDMgIjsxOzIzNTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um n&#250;mero&quot;" newline="True"/>
+            <input variable="numero"/>
+            <while expression="numero &gt;= 0">
+                <output expression="numero" newline="True"/>
+                <assign variable="numero" expression="numero - 1"/>
+            </while>
+            <output expression="&quot;BOOOMMM!!!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

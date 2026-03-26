@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Cofrinho"/>
+        <attribute name="authors" value="anacl"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-26 06:55:12 "/>
+        <attribute name="created" value="YW5hY2w7QUNFUi1BTkE7MjAyNi0wMy0yNjsiMDY6NTA6MTAgIjsyMjM1"/>
+        <attribute name="edited" value="YW5hY2w7QUNFUi1BTkE7MjAyNi0wMy0yNjsiMDY6NTU6MTIgIjsxOzIzNTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="meta, valor, total" type="Integer" array="False" size=""/>
+            <assign variable="meta" expression="100"/>
+            <assign variable="total" expression="0"/>
+            <while expression="total &lt; meta">
+                <output expression="&quot;Quanto ir&#225; depositar?&quot;" newline="True"/>
+                <input variable="valor"/>
+                <assign variable="total" expression="total + valor"/>
+                <output expression="&quot;Valor acumulado &quot; &amp; total &amp; &quot;R$&quot;" newline="True"/>
+            </while>
+            <output expression="&quot;Meta atingida!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
